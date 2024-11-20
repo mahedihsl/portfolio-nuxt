@@ -1,11 +1,12 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: "static",
+  target: "static", // Static site generation
+
   colorMode: {
     classSuffix: "",
   },
 
-  // Global page headers: https://go.nuxtjs.dev/config-head
+  // Global page headers
   head: {
     title: "Stoman Portfolio",
     htmlAttrs: {
@@ -20,27 +21,31 @@ export default {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.png" }],
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
+  // Global CSS
   css: ["~/assets/app.css"],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
+  // Plugins to run before rendering page
   plugins: [
     // "~/plugins/back-to-top.js"
   ],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
+  // Auto import components
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    // https://go.nuxtjs.dev/tailwindcss
-    "@nuxtjs/tailwindcss",
-    "@nuxtjs/color-mode",
-  ],
+  // Modules for dev and build (recommended)
+  buildModules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode"],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
+  // Modules
   modules: [],
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  // Build Configuration
+  build: {
+    // Set the build directory to 'dist'
+    publicPath: "/dist/", // Optional if you want to serve assets from a specific path
+  },
+
+  // Static site generation settings
+  generate: {
+    dir: "dist", // Set the output directory for the generated static files
+  },
 };
