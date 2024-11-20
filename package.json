@@ -13,12 +13,16 @@
     "core-js": "^3.15.1",
     "feather-icons": "^4.28.0",
     "nuxt": "^2.15.7",
-    "uuid": "^8.3.2"
+    "uuid": "^8.3.2",
+    "postcss-nesting": "^8.0.1" // Added here
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^2.1.1",
     "@nuxtjs/tailwindcss": "^4.2.0",
     "postcss": "^8.3.5",
     "vue-backtotop": "^1.6.1"
+  },
+  "engines": {
+    "node": "16.0" // Specified Node.js version
   }
 }
