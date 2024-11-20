@@ -1,37 +1,34 @@
 <script>
-import feather from "feather-icons";
+  import feather from "feather-icons";
 
-export default {
-  data: () => {
-    return {
-      // Todo
-    };
-  },
+  export default {
+    data: () => {
+      return {
+        // Todo
+      };
+    },
 
-  mounted() {
-    feather.replace();
-  },
-  updated() {
-    feather.replace();
-  },
-};
+    mounted() {
+      feather.replace();
+    },
+    updated() {
+      feather.replace();
+    },
+  };
 </script>
 
 <template>
-  <section
-    class="
+  <section class="
       flex flex-col
       sm:justify-between
       items-center
       sm:flex-row
       mt-12
       sm:mt-10
-    "
-  >
+    ">
     <!-- Banner left contents -->
     <div class="w-full md:w-1/3 text-left">
-      <h1
-        class="
+      <h1 class="
           font-general-semibold
           text-3xl
           md:text-3xl
@@ -41,12 +38,10 @@ export default {
           text-ternary-dark
           dark:text-primary-light
           uppercase
-        "
-      >
-        Hi, Iam Stoman
+        ">
+        Hi, I am Mahedi
       </h1>
-      <p
-        class="
+      <p class="
           font-general-medium
           mt-2
           text-lg
@@ -56,15 +51,11 @@ export default {
           sm:text-left
           leading-none
           text-gray-400
-        "
-      >
+        ">
         A Full-Stack Developer & Design Enthusiast
       </p>
       <div class="flex justify-center sm:block">
-        <a
-          href="/Stoman-Resume.pdf"
-          download=""
-          class="
+        <a href="/Stoman-Resume.pdf" download="" class="
             flex
             justify-center
             items-center
@@ -86,27 +77,15 @@ export default {
             text-gray-500
             hover:text-white
             duration-500
-          "
-          aria-label="Download Resume"
-        >
-          <i
-            data-feather="arrow-down-circle"
-            class="ml-0 sm:ml-1 mr-2 sm:mr-3 w-5 sm:w-6 duration-100"
-          ></i>
-          <span class="text-sm sm:text-lg font-general-medium duration-100"
-            >Download CV</span
-          ></a
-        >
+          " aria-label="Download Resume">
+          <i data-feather="arrow-down-circle" class="ml-0 sm:ml-1 mr-2 sm:mr-3 w-5 sm:w-6 duration-100"></i>
+          <span class="text-sm sm:text-lg font-general-medium duration-100">Download CV</span></a>
       </div>
     </div>
 
     <!-- Banner right illustration -->
     <div class="w-full md:w-2/3 text-right float-right">
-      <img
-        v-if="this.$colorMode.value == 'dark'"
-        src="~/static/developer-dark.svg"
-        alt="Developer Dark"
-      />
+      <img v-if="this.$colorMode.value == 'dark'" src="~/static/developer-dark.svg" alt="Developer Dark" />
       <img v-else src="~/static/developer.svg" alt="Developer Light" />
     </div>
   </section>
