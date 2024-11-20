@@ -23,6 +23,6 @@
     "vue-backtotop": "^1.6.1"
   },
   "engines": {
-    "node": "16.0" // Specified Node.js version
+    "node": "16.x" // Specified Node.js version
   }
 }
