@@ -8,7 +8,7 @@ export default {
 
   // Global page headers
   head: {
-    title: "Stoman Portfolio",
+    title: "Mahedi Hassan",
     htmlAttrs: {
       lang: "en",
     },
