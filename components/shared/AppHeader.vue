@@ -45,6 +45,8 @@
   <nav id="nav" class="sm:container sm:mx-auto">
     <!-- Header -->
     <div class="
+    border-b-2
+
         z-10
         max-w-screen-lg
         xl:max-w-screen-xl
@@ -57,9 +59,10 @@
         <!-- Header logos -->
         <div>
           <NuxtLink to="/">
-            <img v-if="this.$colorMode.value == 'dark'" src="~/static/logo-light.svg" class="w-36" alt="Light Logo" />
+            <h1 class="font-general-semibold text-4xl">{MH}</h1>
+            <!-- <img v-if="this.$colorMode.value == 'dark'" src="~/static/logo-light.svg" class="w-36" alt="Light Logo" /> -->
 
-            <img v-else src="~/static/logo-dark.svg" alt="Color Logo" class="w-36" />
+            <!-- <img v-else src="~/static/logo-dark.svg" alt="Color Logo" class="w-36" /> -->
           </NuxtLink>
         </div>
 
